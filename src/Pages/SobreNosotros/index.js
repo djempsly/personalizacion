@@ -1,17 +1,15 @@
 import React from "react";
 
-
-
-const Home = () =>{
-
+function SobreNosotros(){
     return(
         <>
-            <span>Home</span>
+        
         </>
     )
 }
 
-export { Home}
+export {SobreNosotros}
+
 
 
 
