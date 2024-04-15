@@ -4,7 +4,7 @@ function Servicios(){
     return (
 
         <>
-        <span>Servicios</span>
+     
         </>
     )
 }

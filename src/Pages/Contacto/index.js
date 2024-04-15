@@ -5,7 +5,9 @@ const Contactos = ()=>{
     return(
         <> 
         
-        <span>Contactos</span></>
+    
+        
+        </>
     )
 }
 

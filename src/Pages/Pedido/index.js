@@ -1,13 +1,19 @@
 import React from "react";
 
-function Otros(){
+function Pedido(){
+
     return(
         <>
-       
-        
-    
         </>
     )
 }
 
-export {Otros}
+export {Pedido}
+
+
+
+
+
+
+
+

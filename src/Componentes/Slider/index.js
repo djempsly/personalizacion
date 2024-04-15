@@ -1,5 +1,5 @@
 import React from "react";
-import imagen1 from '../assets/imagen1.jpg'
+import imagen1 from '../../assets/imagen1.jpg'
 import './index.css'
 
 const Slider = () =>{
