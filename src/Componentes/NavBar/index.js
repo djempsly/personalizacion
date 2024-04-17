@@ -1,28 +1,33 @@
 
-import { NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
  import './navbar.css'
- import { SlArrowRight } from "react-icons/sl";
 
 const NavBar = ()=>{
 
     return(
         <nav className="nav">
-            <ul className="nav-ul">
+            <ul className="nav-izquierdo">
                 <li>
                     <NavLink to='/'> Inicio
 
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to='/sublimable'> Productos Sublimables
 
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to='/vinil'> Productos con Vinil
+                <select>
+                    <option selected='selected'> Productos</option>         
+                        <option>
+                            <NavLink to='/sublimable'> Productos Sublimables
 
-                    </NavLink>
-                </li>
+                            </NavLink>
+                        </option>
+                        <option>
+                            <NavLink to= '/vinil'> Productos con Vinil
+
+                            </NavLink>
+                        </option>
+                    
+                </select>
+
                 <li>
                     <NavLink to='/servicio'> Servicios
 
@@ -45,26 +50,17 @@ const NavBar = ()=>{
                 </li>
               
             </ul>
+            {/* 👇 Aqui es el cuadro de busqueda */}
             <input className="buscador" placeholder="Busca tu articulos aqui" />
-            <ul className="navbar-acceso">
+
+            <ul className="navbar-derecho">
                 <li>
                     <NavLink to='/cuenta'> Cuenta
-                        <SlArrowRight>
-                        <li>
-                    <NavLink to='/dashboard'> Dashboard 
-
-                    </NavLink>
-                </li>
-                        </SlArrowRight>
-                        
-                     
-
+                      
                     </NavLink>
                   
                 </li>
-              
-
-
+            
                 <li>
                     <NavLink to='pedido'>Pedido
 

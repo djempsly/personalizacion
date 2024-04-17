@@ -1,5 +1,5 @@
 import React from 'react';
-import {useRoutes, BrowserRouter} from 'react-router-dom'
+import { BrowserRouter, useRoutes} from 'react-router-dom'
 import { Slider } from '../../Componentes/Slider';
 import { NavBar } from '../../Componentes/NavBar';
 // import '../App.css';
@@ -14,10 +14,11 @@ import { NoEncontrado } from '../NoEncontrado';
 import { Pedido } from '../Pedido';
 import { Pedidos } from '../Pedidos';
 import { Cuenta } from '../Cuenta';
+// import { Registrar } from '../Sesion/Registrar';
 
 
 
-const Approutes = () =>{
+const AppRoutes = () =>{
   let routes = useRoutes([
     {path:'/', element: <Inicio />},
     {path:'/sublimable', element: <Sublimable />},
@@ -27,22 +28,9 @@ const Approutes = () =>{
     {path:'/contactos', element: <Contactos />},
     {path:'/otros', element: <Otros />},
     {path:'/*', element: <NoEncontrado />},
-    {path: '/cuenta', element: <Cuenta />,
-    children: [
-      {
-        path: "dashboard",
-        element:  'Dashboard',
-      },
-      {
-        path: "about",
-        element:'About',
-      },
-    ],
-  },
+    {path: '/cuenta', element: <Cuenta />},
     {path:'/pedido', element: <Pedido />},
-    {path: '/pedidos', element: <Pedidos />}
-
-
+    {path: '/pedidos', element: <Pedidos />},
 
   ])
 
@@ -54,14 +42,18 @@ function App() {
   <>
   
   <BrowserRouter>
-    <Approutes />
+ 
     <NavBar />
+    <Slider />
+    <AppRoutes />
   </BrowserRouter>
 
-  <Slider />
+  {/* <Registrar /> */}
   
   </>
   );
 }
+
+
 
 export default App;

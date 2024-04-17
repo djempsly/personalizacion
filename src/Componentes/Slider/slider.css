@@ -1,0 +1,99 @@
+/* .slider-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-img img {
+    width: 100%;
+ 
+    
+}
+
+ */
+
+
+
+
+
+/* /AQUI EMPIEZA LOS ESTILOS DEL SLIDER/ */
+
+.slider_container{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(243, 243, 239);
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+     
+ }
+
+ .slider ul{
+    width: 400%;
+    animation: cambio 20s alternate;
+    display: flex;
+  
+ 
+ }
+
+.slider ul li{
+    width: 100%;
+    height: 50%;
+    float: left;
+    list-style: none;
+   
+}
+.slider ul li img{
+    width: 70%;
+    height: 500px;
+    margin-top: 2px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    
+}
+
+.slider_nav{
+    display: flex;
+    justify-content: center;
+}
+
+.slider_nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.slider_nav ul li a{
+   display: flex;
+}
+
+/* /El movimiento del slider/ */
+
+@keyframes cambio {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

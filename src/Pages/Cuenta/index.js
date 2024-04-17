@@ -9,15 +9,15 @@ import React from "react";
 //   const router = createBrowserRouter([
 //     {
 //       path: "/",
-//       element: <Root />,
+//       element: "root",
 //       children: [
 //         {
 //           path: "dashboard",
-//           element: <Dashboard />,
+//           element: "Dashboard",
 //         },
 //         {
 //           path: "about",
-//           element: <About />,
+//           element: "About",
 //         },
 //       ],
 //     },
@@ -31,7 +31,7 @@ function Cuenta(){
 
 {/* <RouterProvider
     router={router}
-    fallbackElement={<BigSpinner />}
+    // fallbackElement={<BigSpinner />}
   /> */}
 
 
