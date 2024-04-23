@@ -34,7 +34,7 @@ function Todo({precio}){
                     <figure>
                         <img src={ImagenSlider[0].img} alt="" text="Canada" className="img" />
                     </figure>
-                    <div>
+                    <div className="detalles-productos">
                         <span className="precio">
                             Precio
                         </span>
@@ -47,7 +47,7 @@ function Todo({precio}){
                     <figure>
                         <img src= {ImagenSlider[1].img} alt="" text="Canada" className="img" />
                     </figure>
-                    <div>
+                    <div className="detalles-productos">
                         <span className="precio">
                             Precio
                         </span>
@@ -60,7 +60,7 @@ function Todo({precio}){
                     <figure>
                         <img src= {ImagenSlider[2].img} alt="" text="Canada" className="img" />
                     </figure>
-                    <div>
+                    <div className="detalles-productos">
                         <span className="precio">
                             Precio ${precio}
                         </span>
@@ -73,7 +73,7 @@ function Todo({precio}){
                     <figure>
                         <img src= {ImagenSlider[3].img} alt="" text="Canada" className="img" />
                     </figure>
-                    <div>
+                    <div className="detalles-productos">
                         <span className="precio">
                             Precio
                         </span>
@@ -86,7 +86,7 @@ function Todo({precio}){
                     <figure>
                         <img src= {ImagenSlider[4].img} alt="" text="Canada" className="img"  />
                     </figure>
-                    <div>
+                    <div className="detalles-productos">
                         <span className="precio">
                             Precio
                         </span>
