@@ -1,33 +1,31 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import './footer.css'
 
-import {NavLink } from "react-router-dom";
- import './navbar.css'
-
-const NavBar = ()=>{
-
+function Footer(){
     return(
-        <nav className="nav">
-            <ul className="nav-izquierdo">
+        <>
+        <div className="footer-container">
+        return(
+        <nav className="">
+            <ul className="">
                 <li>
                     <NavLink to='/'> Inicio
 
                     </NavLink>
                 </li>
 
-                <select className="select-product-container">
-                    <option selected='selected'> Productos</option>         
-                        <option>
-                            <NavLink to='/sublimable'> Productos Sublimables
+                <li>
+                    <NavLink to='/sublimable'> Productos Sublimables
 
-                            </NavLink>
-                        </option>
-                        <option>
-                            <NavLink to= '/vinil'> Productos con Vinil
+                     </NavLink>
+                </li>
+                <li>   
+                    <NavLink to= '/vinil'> Productos con Vinil
 
-                            </NavLink>
-                        </option>
-                    
-                </select>
-
+                    </NavLink>
+                        
+                </li>
                 <li>
                     <NavLink to='/servicio'> Servicios
 
@@ -50,10 +48,9 @@ const NavBar = ()=>{
                 </li>
               
             </ul>
-            {/* 👇 Aqui es el cuadro de busqueda */}
-            <input className="buscador" placeholder="Busca tu articulos aqui" />
+         
 
-            <ul className="navbar-derecho">
+            <ul className="">
                 <li>
                     <NavLink to='/cuenta'> Cuenta
                       
@@ -71,10 +68,16 @@ const NavBar = ()=>{
 
                     </NavLink>
                 </li>
-                <span>🛒0</span>
+               
             </ul>
         </nav>
     )
+
+        </div>
+        </>
+    )
 }
 
-export {NavBar}
+export { Footer}
+
+

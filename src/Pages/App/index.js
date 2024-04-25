@@ -14,6 +14,7 @@ import { NoEncontrado } from '../NoEncontrado';
 import { Pedido } from '../Pedido';
 import { Pedidos } from '../Pedidos';
 import { Cuenta } from '../Cuenta';
+import { Footer } from '../../Componentes/Footer';
 // import { Registrar } from '../Sesion/Registrar';
 
 
@@ -46,6 +47,8 @@ function App() {
     <NavBar />
     <Slider />
     <AppRoutes />
+    
+  <Footer />
   </BrowserRouter>
 
   {/* <Registrar /> */}
