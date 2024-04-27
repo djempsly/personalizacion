@@ -42,6 +42,23 @@ const Slider = () =>{
                 </li>
               </ul>
             </div>
+            <div className="slider-derecho"> 
+              <ul> 
+                <li>
+                <img src= {ImagenSlider[0].img} alt="" />
+                </li>
+                <li>
+                  <img src= {ImagenSlider[1].img} alt="" />
+                </li>
+                <li>
+                  <img src= {ImagenSlider[2].img} alt="" />
+                </li>
+                <li>
+                  <img src= {ImagenSlider[3].img} alt="" />
+                </li>
+              </ul>
+            </div>
+
 
         </div>
 

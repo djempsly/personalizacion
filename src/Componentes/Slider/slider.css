@@ -17,13 +17,15 @@
 
 /* /AQUI EMPIEZA LOS ESTILOS DEL SLIDER/ */
 
-.slider_container{
-    width: 100%;
+.slider-container{
+    display: flex;
+    /* width: 100%;
     margin: 0;
     background-color: rgb(243, 243, 239);
+  */
 }
 .slider{
-    width: 100%;
+    width: 70%;
     overflow: hidden;
      
  }
@@ -44,7 +46,7 @@
    
 }
 .slider ul li img{
-    width: 70%;
+    width: 100%;
     height: 500px;
     margin-top: 2px;
     border-top-left-radius: 50px;
@@ -52,7 +54,7 @@
     
 }
 
-.slider_nav{
+/* .slider_nav{
     display: flex;
     justify-content: center;
 }
@@ -66,7 +68,55 @@
 
 .slider_nav ul li a{
    display: flex;
+} */
+
+
+.slider-derecho{
+    width: 30%;
+    overflow: hidden;
+     
+ }
+
+ .slider-derecho ul{
+    width: 400%;
+    animation: cambioArriba 20s alternate;
+    display: flex;
+    float: inline-start;
+  
+ 
+ }
+
+.slider-derecho ul li{
+    width: 100%;
+    height: 50%;
+    float: left;
+    list-style: none;
+   
 }
+.slider-derecho ul li img{
+    width: 100%;
+    height: 200px;
+    margin-top: 2px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    
+}
+
+/* .slider_nav{
+    display: flex;
+    justify-content: center;
+}
+
+.slider_nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.slider_nav ul li a{
+   display: flex;
+} */
 
 /* /El movimiento del slider/ */
 
@@ -81,9 +131,31 @@
     70%{margin-left: -200%;}
 
     75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+    95%{margin-left: -300%;}
     
 }
+
+@keyframes cambioArriba {
+  
+
+  
+
+   
+
+    30%{margin-bottom: 0%;}
+    38%{margin-top: 0%;}
+
+    20%{margin-bottom: -100%;}
+    22%{margin-top: -100%;}
+
+    10%{margin-bottom: -200%;}
+    12%{margin-top: -200%;}
+
+    0%{margin-top: -300%;}
+    8%{margin-bottom: -3000%;}
+    
+}
+
 
 
 
