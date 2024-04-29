@@ -8,8 +8,6 @@ import PoloFerreteria from '../../assets/imgSlider/PoloFerreteria.jpg'
 import './todo.css'
 
 
-
-
 const ImagenSlider = [
     
     {"img": Canada},
@@ -18,10 +16,8 @@ const ImagenSlider = [
     {"img": DomRep},
     {"img": imagen1},
 
-
 ]
 
-    
     
 
 function Todo({precio}){
@@ -95,14 +91,9 @@ function Todo({precio}){
                         </span>
                     </div>
                 </div>
-             
-          
             </div>
-
         </div>
-         
         </>
-
     )
 }
 

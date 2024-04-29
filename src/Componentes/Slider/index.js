@@ -4,7 +4,7 @@ import DomRep from '../../assets/imgSlider/DomRep.jpg'
 import imagen1 from '../../assets/imgSlider/imagen1.jpg'
 import MExico from '../../assets/imgSlider/MExico.jpg'
 import PoloFerreteria from '../../assets/imgSlider/PoloFerreteria.jpg'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './slider.css'
 
 

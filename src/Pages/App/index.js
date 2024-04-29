@@ -15,7 +15,8 @@ import { Pedido } from '../Pedido';
 import { Pedidos } from '../Pedidos';
 import { Cuenta } from '../Cuenta';
 import { Footer } from '../../Componentes/Footer';
-// import { Registrar } from '../Sesion/Registrar';
+import { Logo } from '../../Componentes/HeaderLogo';
+ import { Registrar } from '../Sesion/Registrar';
 
 
 
@@ -32,6 +33,7 @@ const AppRoutes = () =>{
     {path: '/cuenta', element: <Cuenta />},
     {path:'/pedido', element: <Pedido />},
     {path: '/pedidos', element: <Pedidos />},
+    {path:'/registrar', element:<Registrar />}
 
   ])
 
@@ -43,6 +45,7 @@ function App() {
   <>
   
   <BrowserRouter>
+  <Logo />
  
     <NavBar />
     <Slider />
@@ -50,8 +53,6 @@ function App() {
     
   <Footer />
   </BrowserRouter>
-
-  {/* <Registrar /> */}
   
   </>
   );
