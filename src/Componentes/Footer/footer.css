@@ -1,7 +1,47 @@
 .footer-container{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.div-logo-footer{
+    width: 15%;
+    margin-top: 10px;
+    position: absolute;
+    left: 16px;
 }
 
+.div-logo-footer li{
+    list-style: none;
+}
+
+.logo-footer-lhams{
+    width: 100%;
+    height: 300px;
+}
+
+
+
 .footer-container a{
+    color: white;
+}
+
+.div-link{
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid orange;
+    margin-top: 10px;
+}
+
+
+.img-instagram{
+    width: 25px;
+}
+
+.span-letra{
     color: white;
 }

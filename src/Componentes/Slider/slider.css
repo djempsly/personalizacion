@@ -82,6 +82,7 @@
     animation: cambioArriba 20s alternate;
     display: flex;
     float: inline-start;
+    transform: translateZ(0);
   
  
  }

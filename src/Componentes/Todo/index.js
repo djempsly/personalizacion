@@ -93,6 +93,7 @@ function Todo({precio}){
                 </div>
             </div>
         </div>
+        
         </>
     )
 }
