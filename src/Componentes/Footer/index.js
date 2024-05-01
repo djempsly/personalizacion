@@ -81,6 +81,7 @@ function Footer(){
 
                 </div>
             </div>
+            {/* <span className="nombre-negocio"> Lhams-DJ</span> */}
         </div>
         <div className="copyright">
             <span>© 2024 Lhams-DJ, todos los derechos reservado <br /> </span>

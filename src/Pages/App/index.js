@@ -17,6 +17,7 @@ import { Cuenta } from '../Cuenta';
 import { Footer } from '../../Componentes/Footer';
 import { Logo } from '../../Componentes/HeaderLogo';
  import { Registrar } from '../Sesion/Registrar';
+ import { Entra } from '../Sesion/IniciarSesion';
 
 
 
@@ -33,7 +34,8 @@ const AppRoutes = () =>{
     {path: '/cuenta', element: <Cuenta />},
     {path:'/pedido', element: <Pedido />},
     {path: '/pedidos', element: <Pedidos />},
-    {path:'/registrar', element:<Registrar />}
+    {path:'/registrar', element:<Registrar />},
+    {path:'/entra', element:<Entra />}
 
   ])
 

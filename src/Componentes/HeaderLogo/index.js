@@ -15,15 +15,22 @@ const Logo = ()=>{
             </div>
 
             <div className="registro-sesion">
-                <li>
+                <div className="div-registrar">
+                    <span>Si no te has registrado👇</span>
+                    <button className="boton-registrar">
+                        <Link className="button button-secondary" to="/registrar">Registrar</Link> 
+                    </button>
+                </div>
+             
 
-            
-                <Link className="button button-secondary" to="/registrar">Registrar</Link> 
-
-            
-
-                </li>
+                <div className="div-entrar">
+                    <button className="boton-entra">
+                        <Link to="/entra"> Entrar</Link>
+                    </button>
+                </div>
                 
+
+       
             </div>
         </div>
     )

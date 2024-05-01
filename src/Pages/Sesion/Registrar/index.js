@@ -1,7 +1,7 @@
 import React from "react";
 // import { Form } from "react-router-dom";
 import { Field, Formik,Form } from "formik";
-import './index.css'
+import './registra.css'
 
 import { Link } from "react-router-dom";
 
@@ -16,7 +16,7 @@ const Registrar = ()=>{
         </div> */}
 
 
-<h3>Create Genre</h3>
+<h3>Registrar</h3>
             <Formik 
                 initialValues={{
                     name: ''

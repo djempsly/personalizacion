@@ -27,6 +27,41 @@ display: flex;
     height: 200px;
 }
 
+.registro-sesion{
+    width: 40%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 4px solid rgb(3, 3, 84);
+    border-bottom: 4px solid rgb(3, 3, 84);
+    margin: 8px 0 12px 0;
+    padding: 0 116px;
+}
+.div-registrar{
+    display: flex;
+    flex-direction: column;
+}
 
+.div-registrar :hover{
+    color: black;
+    background-color: bisque;
+    box-shadow: 5px 5px 5px orange;
+    border: 1px solid black;
 
+}
 
+.boton-registrar{
+    width: 150px;
+    background: rgb(3, 3, 84);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.boton-registrar  a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
