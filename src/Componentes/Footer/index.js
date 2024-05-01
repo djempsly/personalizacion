@@ -2,6 +2,7 @@ import React from "react";
 import instagramlogo from '../../assets/imagen/instagramlogo.jpeg';
 import whatsApp from '../../assets/imagen/whatsApp.jpg'
 import logo from '../../assets/imagen/logo.png'
+import logofacebook from '../../assets/imagen/logofacebbok.png'
 import './footer.css'
 
 function Footer(){
@@ -11,7 +12,7 @@ function Footer(){
             <div className="div-logo-footer">
                 <li>
                     <a href="/">
-                        <img className="logo-footer-lhams" src={logo}  />
+                        <img className="logo-footer-lhams" src={logo} alt="" />
                     </a>
                 </li>
 
@@ -31,41 +32,60 @@ function Footer(){
                         <li> <a href='/otros'> Otros</a> </li>
                     </ul>
                 
-                    <ul className="">
+                    <ul className="link-right">
                         <li> <a href='/cuenta'>Cuenta</a> </li>
                         <li> <a href="/pedido">Pedido</a> </li>
-                        <li> <a href="/pedidos"></a> </li>
+                        <li> <a href="/pedidos"> Pedidos</a> </li>
                     
                     </ul>
                 </nav>
             </div>
 
 
+            <div className="container-logo-redes">
+                <div> <span className="span-letra">Siguenos en</span> </div>
+                <div className="redes">
+                    <div>
+                        <li>
+                            <a target="_blank" href="" rel="noreferrer noopener">
+                            <img className="img-instagram" src={logofacebook} alt="" /> 
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/lhamsdj/" rel="noreferrer noopener">
+                            <img className="img-instagram" src={instagramlogo} alt="" /> 
+                            </a>
+                        </li>
+                    </div>
+                
+                </div>
+                <div className="div-contactos">
+                    <span className="contactos">Contactos</span>
 
-            <div className="redes">
-                <span className="span-letra">Siguenos en</span>
-                <div>
-                    <li>
-                        <a target="_blank" href="https://www.instagram.com/lhamsdj/" rel="noreferrer noopener">
-                        <img className="img-instagram" src={instagramlogo} alt="" /> 
-                        </a>
-                    </li>
+                    <div>
+                        <span className="descripcion">🎯 Calle San Martin,  parte atrás, # 7, <br /> D.M. Palo Verde,  Montecristi, R.D.
+
+                        </span>
+                    </div>
+
+                    <div className="div-numero">
+                        <li>
+                            <a target="_blank"  rel="noreferrer noopener">
+                            <img className="img-instagram-whatsApp" src={whatsApp} alt="" />  
+                            </a>
+                        </li>
+                        <span className="numero"> 809-254-5239 </span>
+                    </div>
+
                 </div>
-                <div>
-                    <li>
-                        <a target="_blank"  rel="noreferrer noopener">
-                        <img className="img-instagram" src={whatsApp} alt="" />  
-                        </a>
-                    </li>
-                </div>
-            
             </div>
         </div>
-
-       
-
-      
-
+        <div className="copyright">
+            <span>© 2024 Lhams-DJ, todos los derechos reservado <br /> </span>
+        <span className="hija">Jemaya & Mayasa</span>
+        </div>
         </>
     )
 }
