@@ -16,14 +16,17 @@ const Logo = ()=>{
 
             <div className="registro-sesion">
                 <div className="div-registrar">
-                    <span>Si no te has registrado👇</span>
+                    <div className="div-boton-registrar">
                     <button className="boton-registrar">
                         <Link className="button button-secondary" to="/registrar">Registrar</Link> 
                     </button>
+
+                    </div>
                 </div>
              
 
                 <div className="div-entrar">
+                    
                     <button className="boton-entra">
                         <Link to="/entra"> Entrar</Link>
                     </button>

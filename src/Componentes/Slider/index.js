@@ -1,21 +1,17 @@
 import React from "react";
-import Canada from '../../assets/imgSlider/Canada.jpg'
-import DomRep from '../../assets/imgSlider/DomRep.jpg'
-import imagen1 from '../../assets/imgSlider/imagen1.jpg'
-import MExico from '../../assets/imgSlider/MExico.jpg'
-import PoloFerreteria from '../../assets/imgSlider/PoloFerreteria.jpg'
-
+import img1 from '../../assets/imgSlider/img1.png'
+import img2 from '../../assets/imgSlider/img2.png'
+import img3 from '../../assets/imgSlider/img3.png'
+import img4 from '../../assets/imgSlider/img4.png'
 import './slider.css'
 
 
 
 const ImagenSlider = [
-{"img": Canada},
-{"img": MExico},
-{"img": PoloFerreteria},
-{"img": DomRep},
-{"img": imagen1},
-
+{"img": img1},
+{"img": img2},
+{"img": img3},
+{"img": img4},
 ]
 
 
@@ -42,7 +38,9 @@ const Slider = () =>{
                 </li>
               </ul>
             </div>
-            <div className="slider-derecho"> 
+
+            
+            {/* <div className="slider-derecho"> 
               <ul> 
                 <li>
                 <img src= {ImagenSlider[0].img} alt="" />
@@ -57,7 +55,7 @@ const Slider = () =>{
                   <img src= {ImagenSlider[3].img} alt="" />
                 </li>
               </ul>
-            </div>
+            </div> */}
 
 
         </div>

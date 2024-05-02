@@ -28,7 +28,7 @@ display: flex;
 }
 
 .registro-sesion{
-    width: 40%;
+    width: 30%;
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
@@ -37,23 +37,15 @@ display: flex;
     border-top: 4px solid rgb(3, 3, 84);
     border-bottom: 4px solid rgb(3, 3, 84);
     margin: 8px 0 12px 0;
-    padding: 0 116px;
 }
 .div-registrar{
     display: flex;
     flex-direction: column;
 }
 
-.div-registrar :hover{
-    color: black;
-    background-color: bisque;
-    box-shadow: 5px 5px 5px orange;
-    border: 1px solid black;
-
-}
 
 .boton-registrar{
-    width: 150px;
+    width: 100px;
     background: rgb(3, 3, 84);
     border: none;
     border-radius: 5px;
@@ -64,4 +56,44 @@ display: flex;
     color: white;
     text-decoration: none;
     font-size: large;
+}
+.boton-registrar a:hover{
+    color: black;
+    border: none;
+}
+.boton-registrar :hover{
+    color: black;
+    background-color: bisque;
+    box-shadow: 5px 5px 5px orange;
+    border: 1px solid black;
+
+}
+
+.div-entra{
+    width: 100px;
+}
+
+.boton-entra{
+    width: 100px;
+    background: rgb(3, 3, 84);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.boton-entra  a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+.boton-entra a:hover{
+    color: black;
+    border: none;
+}
+.boton-entra :hover{
+    color: black;
+    background-color: bisque;
+    box-shadow: 5px 5px 5px orange;
+    border: 1px solid black;
+
 }
