@@ -18,6 +18,8 @@ import { Footer } from '../../Componentes/Footer';
 import { Logo } from '../../Componentes/HeaderLogo';
  import { Registrar } from '../Sesion/Registrar';
  import { Entra } from '../Sesion/IniciarSesion';
+ import { Oferta } from '../../Componentes/Oferta';
+ import { Modal } from '../../Componentes/Modal';
 
 
 
@@ -36,30 +38,34 @@ const AppRoutes = () =>{
     {path: '/pedidos', element: <Pedidos />},
     {path:'/registrar', element:<Registrar />},
     {path:'/entra', element:<Entra />}
-
   ])
 
    return routes
 }
 
 function App() {
+  const [openModal, setOpenModal] = React.useState(true)
+
+
   return (
   <>
+  {openModal && (
+    <Modal>
+      <Oferta setOpenModal ={setOpenModal} />
+    </Modal>
+
+  )}
   
   <BrowserRouter>
-  <Logo />
- 
+    <Logo />
     <NavBar />
     <Slider />
     <AppRoutes />
-    
-  <Footer />
+    <Footer />
   </BrowserRouter>
   
   </>
   );
 }
-
-
 
 export default App;

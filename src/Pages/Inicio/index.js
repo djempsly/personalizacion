@@ -8,10 +8,7 @@ const Inicio = () =>{
     return(
         <>
         <Layout>
-
-         <Todo 
-        
-         />
+         <Todo  />
         </Layout>
 
         </>

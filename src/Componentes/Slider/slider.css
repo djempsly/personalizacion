@@ -32,14 +32,14 @@
  }
 
 .slider ul li{
-    /* width: 100%;
+    width: 100%;
     height: 50%;
-    float: left; */
+    float: left;
     list-style: none;
    
 }
 .slider ul li img{
-    width: 100%;
+    width: 94%;
     height: 500px;
     margin-top: 2px;
     border-top-left-radius: 50px;
@@ -125,25 +125,10 @@
     70%{margin-left: -200%;}
 
     75%{margin-left: -300%;}
-    95%{margin-left: -300%;}
+    100%{margin-left: -300%;}
     
 }
 
-@keyframes cambioArriba {
-
-    30%{margin-bottom: 0%;}
-    38%{margin-top: 0%;}
-
-    20%{margin-bottom: -100%;}
-    22%{margin-top: -100%;}
-
-    10%{margin-bottom: -200%;}
-    12%{margin-top: -200%;}
-
-    0%{margin-top: -300%;}
-    8%{margin-bottom: -3000%;}
-    
-}
 
 
 

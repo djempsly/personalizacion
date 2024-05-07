@@ -3,7 +3,6 @@ import logoimagen from '../../assets/imagen/logoimagen.svg'
 import logoletra from '../../assets/imagen/logoletra.png'
 import { Link } from "react-router-dom";
 
-
 import './HeaderLogo.css'
 
 const Logo = ()=>{
@@ -18,13 +17,12 @@ const Logo = ()=>{
                 <div className="div-registrar">
                     <div className="div-boton-registrar">
                     <button className="boton-registrar">
-                        <Link className="button button-secondary" to="/registrar">Registrar</Link> 
+                        <Link className="" to="/registrar">Registrar</Link> 
                     </button>
 
                     </div>
                 </div>
              
-
                 <div className="div-entrar">
                     
                     <button className="boton-entra">
@@ -32,8 +30,6 @@ const Logo = ()=>{
                     </button>
                 </div>
                 
-
-       
             </div>
         </div>
     )
