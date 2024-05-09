@@ -1,8 +1,8 @@
-
+import React from "react";
 import {NavLink } from "react-router-dom";
  import './navbar.css'
 
-const NavBar = ()=>{
+const NavBar = ({search, setSearch})=>{
 
     return(
         <nav className="nav">
@@ -13,20 +13,27 @@ const NavBar = ()=>{
                     </NavLink>
                 </li>
 
-                <select className="select-product-container">
-                    <option selected='selected'> Productos</option>         
-                        <option>
+                <li> <a href="#">Productos</a>
+                    <ul> 
+                        <li>
+
                             <NavLink to='/sublimable'> Productos Sublimables
 
                             </NavLink>
-                        </option>
-                        <option>
+                        </li>
+                        <li>
                             <NavLink to= '/vinil'> Productos con Vinil
 
                             </NavLink>
-                        </option>
+                      
+                        </li>
+                    </ul>
+
+                </li>
+                       
                     
-                </select>
+                    
+            
 
                 <li>
                     <NavLink to='/servicio'> Servicios
@@ -50,8 +57,16 @@ const NavBar = ()=>{
                 </li>
               
             </ul>
+
             {/* 👇 Aqui es el cuadro de busqueda */}
-            <input className="buscador" placeholder="Busca tu articulos aqui" />
+            <input className="buscador" placeholder="Busca tu articulos aqui"
+            value={search}
+            onChange={(event)=>{
+                setSearch(event.target.value)
+            }
+            }
+            // setSearch = {setSearch}
+            />
 
             <ul className="navbar-derecho">
                 <li>
@@ -73,6 +88,10 @@ const NavBar = ()=>{
                 </li>
                 <span>🛒0</span>
             </ul>
+
+            <div class="menu-mobile inactive">
+      
+            </div>
         </nav>
     )
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import LazyLoad from 'react-lazyload'
 import Canada from '../../assets/imgSlider/Canada.jpg'
 import DomRep from '../../assets/imgSlider/DomRep.jpg'
 import imagen1 from '../../assets/imgSlider/imagen1.jpg'
@@ -19,45 +18,57 @@ import  taza7 from '../../assets/imgProduct/taza7.jpg'
  import vaso_rosado from '../../assets/imgProduct/vaso_rosado.jpg'
  import vaso1 from '../../assets/imgProduct/vaso1.jpg'
  import Dios from '../../assets/imgProduct/Dios.jpeg'
+ import polomorado from '../../assets/imgProduct/polomorado.jpeg'
+ import polomora from '../../assets/imgProduct/Polomora.jpeg'
 
 import './todo.css'
 
 
-const ImagenSlider = [
-    
-    {"img": Canada},
-    {"img": MExico},
-    {"img": PoloFerreteria},
-    {"img": DomRep},
-    {"img": imagen1},
-    {"img": taza1},
-    {"img": taza2},
-    {"img": taza3},
-    {"img": taza5},
-    {"img": taza6},
-    {"img": taza7},
-    {"img": taza_dorada1},
-    {"img": taza_gris1},
-    {"img": Termo1},
-    {"img": vaso1},
-    {"img": vaso_rosado},
-    {"img": portaretrato},
-    {"img": rompeza_corazon},
-    {"img": Dios}
+const ImgProduct = [
+    {"img": Canada, text:'Taza'},
+    {"img": MExico, text:'Taza'},
+    {"img": PoloFerreteria, text:'Polocher'},
+    {"img": DomRep, text:'Taza'},
+    {"img": imagen1, text:'Taza'},
+    {"img": taza1, text:'Taza'},
+    {"img": taza2, text:'Taza'},
+    {"img": taza3, text:'Taza'},
+    {"img": taza5, text:'Taza'},
+    {"img": taza6, text:'Taza'},
+    {"img": taza7, text:'Taza'},
+    {"img": taza_dorada1, text:'Taza'},
+    {"img": taza_gris1, text:'Taza'},
+    {"img": Termo1, text:'Termo'},
+    {"img": vaso1, text:'Vaso'},
+    {"img": vaso_rosado, text:'Vaso'},
+    {"img": portaretrato, text:'Portaretrato'},
+    {"img": rompeza_corazon, text:'Rompecabeza'},
+    {"img": Dios, text:'Portaretrato'},
+    {"img": polomora, text:'Polocher'},
+    {"img": polomorado, text:'Polocher'}
    
 
 ]  
 
 function Todo(){
+    const [articulo, setArticulo] = React.useState(ImgProduct)
+
+   
+
+
+
+
     return(
         <>
         <div className="div-img-container"> 
-            <div className="img-container"> 
-            <div className="cuadro-productos">
+            <div className="div-product"> 
+
+            <div className="portaretrato img-container">
+                <div className="cuadro-productos">
                     <figure>
-                        <LazyLoad debounce={50} offset={50} once>
-                        <img src={ImagenSlider[18].img} alt="" text="Canada" className="img" loading="lazy" />
-                        </LazyLoad>
+            
+                        <img src={ImgProduct[18].img} alt="" text="Canada" className="img" loading="lazy" />
+
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
@@ -69,291 +80,10 @@ function Todo(){
                     </div>
                 </div>
 
-                <div className="cuadro-productos">
+
+                 <div className="cuadro-productos">
                     <figure>
-                        <LazyLoad debounce={50} offset={50} once>
-                        <img src={ImagenSlider[0].img} alt="" text="Canada" className="img" loading="lazy" />
-                        </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once>        
-                        <img src= {ImagenSlider[1].img} alt="" text="Canada" className="img" loading="lazy" />
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once>
-                        <img src= {ImagenSlider[2].img} alt="" text="Canada" className="img"  loading="lazy"/>
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[3].img} alt="" text="Canada" className="img" loading="lazy" />
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[4].img} alt="" text="Canada" className="img" loading="lazy" />                           
-                           </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[5].img} alt="" text="Canada" className="img" loading="lazy"/>                          
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[6].img} alt="" text="Canada" className="img" loading="lazy" />                         
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[7].img} alt="" text="Canada" className="img" loading="lazy" />                        
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[8].img} alt="" text="Canada" className="img" loading="lazy" />                          
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                           
-                        <img src= {ImagenSlider[9].img} alt="" text="Canada" className="img" loading="lazy"/>
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                           
-                        <img src= {ImagenSlider[10].img} alt="" text="Canada" className="img" loading="lazy" />
-                           </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[11].img} alt="" text="Canada" className="img" loading="lazy" />
-                           
-                           </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[12].img} alt="" text="Canada" className="img" loading="lazy" />
-                           
-                           </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[13].img} alt="" text="Canada" className="img" loading="lazy" />
-                           
-                           </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[14].img} alt="" text="Canada" className="img" loading="lazy" />
-                           
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[14].img} alt="" text="Canada" className="img" loading="lazy" />
-                           
-                    </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                           
-                        <img src= {ImagenSlider[15].img} alt="" text="Canada" className="img" loading="lazy" />
-                           </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[16].img} alt="" text="Canada" className="img" loading="lazy" />
-                           
-                           </LazyLoad>
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                    <LazyLoad debounce={50} offset={50} once> 
-                        <img src= {ImagenSlider[17].img} alt="" text="Canada" className="img" loading="lazy" />
-                           
-                           </LazyLoad>
+                        <img src= {ImgProduct[17].img} alt="" text="Canada" className="img" loading="lazy" />
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
@@ -365,6 +95,296 @@ function Todo(){
                     </div>
                 </div>
 
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[16].img} alt="" text="Canada" className="img" loading="lazy" />   
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div className="taza img-container ">
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src={ImgProduct[0].img} alt="" text="Canada" className="img" loading="lazy" />
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>        
+                        <img src= {ImgProduct[1].img} alt="" text="Canada" className="img" loading="lazy" />
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure> 
+                        <img src= {ImgProduct[12].img} alt="" text="Canada" className="img" loading="lazy" />
+  
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[3].img} alt="" text="Canada" className="img" loading="lazy" />
+
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[4].img} alt="" text="Canada" className="img" loading="lazy" />                           
+
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure> 
+                        <img src= {ImgProduct[5].img} alt="" text="Canada" className="img" loading="lazy"/>                          
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure> 
+                        <img src= {ImgProduct[6].img} alt="" text="Canada" className="img" loading="lazy" />                         
+
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[7].img} alt="" text="Canada" className="img" loading="lazy" />                        
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[8].img} alt="" text="Canada" className="img" loading="lazy" />                          
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>
+                           
+                        <img src= {ImgProduct[9].img} alt="" text="Canada" className="img" loading="lazy"/>
+
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>
+                           
+                        <img src= {ImgProduct[10].img} alt="" text="Canada" className="img" loading="lazy" />
+     
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>
+ 
+                        <img src= {ImgProduct[11].img} alt="" text="Canada" className="img" loading="lazy" />
+     
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+            </div>
+              
+                        
+
+            <div className="termo img-container">
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[14].img} alt="" text="Canada" className="img-termo" loading="lazy" />
+                
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+                <div className="cuadro-productos">
+                    <figure>       
+                        <img src= {ImgProduct[15].img} alt="" text="Canada" className="img-termo" loading="lazy" />
+                          
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+
+                <div className="cuadro-productos">
+                            <figure>
+
+                                <img src= {ImgProduct[13].img} alt="" text="Canada" className="img-termo" loading="lazy" />
+
+                            </figure>
+                            <div className="detalles-productos">
+                                <span className="precio">
+                                    {/* Precio ${precio} */}
+                                </span>
+                                <span className="descripcion">
+                                    {/* Es una taza, con bandera de Canada */}
+                                </span>
+                            </div>
+                        </div>
+       
+            </div>
+
+                <div className="polocher img-container">
+                    
+                    <div className="cuadro-productos">
+                            <figure>
+                                <img src= {ImgProduct[2].img} alt="" text="Canada" className="img"  loading="lazy"/>
+
+                            </figure>
+                            <div className="detalles-productos">
+                                <span className="precio">
+                                    {/* Precio ${precio} */}
+                                </span>
+                                <span className="descripcion">
+                                    {/* Es una taza, con bandera de Canada */}
+                                </span>
+                            </div>
+                    </div>
+
+                    <div className="cuadro-productos">
+                            <figure>
+                                <img src= {ImgProduct[19].img} alt="" text="Canada" 
+                                id="polomorado"
+                                className="img"  loading="lazy"/>
+
+                            </figure>
+                            <div className="detalles-productos">
+                                <span className="precio">
+                                    {/* Precio ${precio} */}
+                                </span>
+                                <span className="descripcion">
+                                    {/* Es una taza, con bandera de Canada */}
+                                </span>
+                            </div>
+                    </div>
+                    <div className="cuadro-productos">
+                            <figure>
+                                <img src= {ImgProduct[20].img} alt="" text="Canada" className="img" 
+                                id="polomora"
+                                loading="lazy"/>
+
+                            </figure>
+                            <div className="detalles-productos">
+                                <span className="precio">
+                                    {/* Precio ${precio} */}
+                                </span>
+                                <span className="descripcion">
+                                    {/* Es una taza, con bandera de Canada */}
+                                </span>
+                            </div>
+                    </div>
+
+
+                </div>
+                
+               
             </div>
         </div>
         

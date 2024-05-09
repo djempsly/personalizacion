@@ -1,26 +1,35 @@
-.nav{padding: 0;
+.nav{
+  padding: 0;
   margin: 0 0 2px 0;
   width: 100%;
   background-color: rgb(3, 3, 84);
-  height: 40px;
+  height: 44px;
   align-content: center;
   display: flex;
   align-items: center;
-  align-content: space-between;
+  justify-content: space-between;
 
 
 }
 
 .nav-izquierdo{
-    display: flex;
+     display: flex;
     gap: 10px;
-    list-style: none;
-   
+    
+  }
+  
+  .nav-izquierdo li {
+  list-style: none; 
+  padding: 10px;
+
+}
+
+.nav-izquierdo li:hover{
+  background-color: orange;
 }
 
 .nav-izquierdo li a{
 color: white;
-size: 25px;
 text-decoration: none;
 font-size: 20px;
 
@@ -28,15 +37,18 @@ font-size: 20px;
 
 .nav-izquierdo li a:hover{
   color: black;
-  background-color: white;
- 
 }
 
 .buscador{
-  height: 30px;
+  border: none;
+  text-align: -webkit-center;
+  border-radius: 6px;
+  position: relative;
+  left: -76px;
+  height: 40px;
   margin-left: 10px;
   margin-right: 10px;
-  width: 350px;
+  width: 400px;
   background: rgb(5, 103, 223);
   color: white;
 }
@@ -49,7 +61,12 @@ font-size: 20px;
 .navbar-derecho{
   display: flex;
   gap: 10px;
+}
+
+.navbar-derecho{
   list-style: none;
+  padding: 10px;
+
 }
 
 .navbar-derecho li a{
@@ -61,4 +78,33 @@ color: white;
   background-color: rgb(3, 3, 84);
   color: white;
 }
+
+/* Aqui Empieza los estilos de los sub-menus*/
+.nav-izquierdo li ul{
+  position: absolute;
+  display: none;
+}
+
+.nav-izquierdo li:hover > ul{
+  display: block;
+  width: 20%;
+  background-color: rgb(5, 5, 153);
+  left: 8px;
+  position: absolute;
+  top: 156px;
+  margin-bottom: 6px;
+
+
+}
+
+.nav-izquierdo li ul li {
+  position: relative;
+}
+
+.nav-izquierdo ul li ul li a{
+  display: block;
+  position: relative;
+  color: aquamarine;
+}
+
 

@@ -10,7 +10,7 @@ function Oferta (props){
     return (
       <>
             <div className="component-container">
-                <img src={madre} alt="" className="imagen-oferta" />
+                <img src={madre} alt="" className="imagen-oferta" loading="lazy" />
               
               <div className="cierra-oferta">
                 <FiX onClick={cerrar} className="cierra" />

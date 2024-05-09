@@ -25,7 +25,7 @@
 
  .slider ul{
     width: 400%;
-    animation: cambio 20s alternate;
+    animation: cambio 20s alternate infinite;
     display: flex;
   
  

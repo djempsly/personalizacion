@@ -7,6 +7,8 @@ import './slider.css'
 
 
 
+
+
 const ImagenSlider = [
 {"img": img1},
 {"img": img2},
@@ -16,56 +18,40 @@ const ImagenSlider = [
 
 
 
-const Slider = () =>{
+const Sliders = () =>{
+
+ 
+  
     return(
         <>
         <div className="slider-container"> 
             <div className="slider"> 
+           
+
               <ul> 
                 <li>
-                <img src= {ImagenSlider[0].img} alt="" />
+                <img src= {ImagenSlider[0].img} alt="" loading="lazy" />
                 </li>
                 <li>
-                  <img src= {ImagenSlider[1].img} alt="" />
+                  <img src= {ImagenSlider[1].img} alt="" loading="lazy" />
                 </li>
                 <li>
-                  <img src= {ImagenSlider[2].img} alt="" />
+                  <img src= {ImagenSlider[2].img} alt="" loading="lazy" />
                 </li>
                 <li>
-                  <img src= {ImagenSlider[3].img} alt="" />
+                  <img src= {ImagenSlider[3].img} alt="" loading="lazy" />
                 </li>
               </ul>
+
+            
             </div>
 
-            
-            
-
         </div>
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </>
     )
 }
 
-export { Slider}
+export { Sliders}
 
 
 
