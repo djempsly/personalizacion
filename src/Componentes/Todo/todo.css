@@ -65,3 +65,31 @@
     height: 600px;
 }
 
+.buscador{
+    border: none;
+    text-align: -webkit-center;
+    border-radius: 6px;
+    position: absolute;
+    left: 780px;
+    top: 105px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    background: rgb(5, 103, 223);
+    color: white;
+  }
+  
+  ::placeholder{
+  color: white;
+  font-size: 20px;
+  }
+
+  
+  @media (max-width:640px){
+    .buscador{
+        width: 50%;
+        position: absolute;
+        left: 279px;
+      }
+  }

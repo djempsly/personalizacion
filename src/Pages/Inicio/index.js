@@ -5,10 +5,13 @@ import { Layout } from "../../Componentes/Layout";
 
 const Inicio = () =>{
 
+  
+
     return(
         <>
+        
         <Layout>
-         <Todo  />
+               <Todo  />
         </Layout>
 
         </>

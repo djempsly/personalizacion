@@ -39,38 +39,26 @@ font-size: 20px;
   color: black;
 }
 
-.buscador{
-  border: none;
-  text-align: -webkit-center;
-  border-radius: 6px;
-  position: relative;
-  left: -76px;
-  height: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 400px;
-  background: rgb(5, 103, 223);
-  color: white;
-}
-
-::placeholder{
-color: white;
-font-size: 20px;
-}
 
 .navbar-derecho{
   display: flex;
   gap: 10px;
 }
 
-.navbar-derecho{
+.navbar-derecho li{
   list-style: none;
   padding: 10px;
 
 }
 
+.navbar-derecho li:hover{
+background-color: orange;
+}
+
 .navbar-derecho li a{
-color: white;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 
 }
 
@@ -89,9 +77,9 @@ color: white;
   display: block;
   width: 20%;
   background-color: rgb(5, 5, 153);
-  left: 8px;
+
   position: absolute;
-  top: 156px;
+  top: 148px;
   margin-bottom: 6px;
 
 
@@ -107,4 +95,87 @@ color: white;
   color: aquamarine;
 }
 
+/*Aqui empieza el menu mobile*/
 
+
+.menu-mobile ul {
+  display: flex;
+  padding: 10px;
+  margin: 0px 10px 0 10px;
+  list-style: none;
+  text-decoration: none;
+  
+}
+.menu-mobile li a{
+  padding: 8px;
+  color: rgb(208, 202, 224);
+
+}
+
+.menu-mobile li a:hover{
+  border: 2px solid rgb(181, 107, 181);
+  border-radius: 15px;
+}
+
+.menu-mobile ul li a{
+  text-decoration: none;
+}
+.menu-mobile  li ul{
+ position: absolute;
+ display: none;
+} 
+
+.menu-mobile li:hover > ul{
+  display: block;
+}   
+.menu-mobile  li ul li {  
+ position: relative;
+
+} 
+
+.menu-mobile ul li ul li a{
+  display: block;
+  width: 70%;
+  position: relative;
+  color: blue;
+  margin-left: -20px;
+  background-color: rgb(94, 27, 150);
+}
+
+.menu-imagen{
+  display: none;
+  cursor: pointer;
+}
+.menu-imagen{
+  width: 20px;
+  position: relative;
+}
+
+
+@media (max-width:640px){
+  .menu-imagen{
+      display: flex;
+
+  }
+ 
+  .contenedor_usuario_registro{
+      display: block;
+  }
+  .formato_sesion_registro{
+      font-size: 15px;
+  }
+
+ 
+  .info{
+      width: 50%;
+  }
+
+  .menu-mobile{
+    display: flex;
+  }
+  .nav-izquierdo{
+    display: none;
+  }
+
+
+}

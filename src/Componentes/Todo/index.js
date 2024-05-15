@@ -50,16 +50,36 @@ const ImgProduct = [
 
 ]  
 
+
+
 function Todo(){
-    const [articulo, setArticulo] = React.useState(ImgProduct)
+ 
+    // const [articulo, setArticulo] = React.useState(ImgProduct)
+    // const [search, setSearch] = React.useState('')
 
-   
-
-
-
+    // const buscaArticulo = articulo.filter( (articul) =>{
+    //     const articuloText = articul.text.toLowerCase()
+    //     const searchText = search.toLocaleUpperCase()
+    //  return  articuloText.includes(searchText)
+      
+    // }) 
 
     return(
         <>
+        
+        {/* <input className="buscador inactive" placeholder="Busca tu articulos aqui"
+            value={search}
+            onChange={(event)=>{
+                setSearch(event.target.value)
+               
+            }}
+            // setSearch = {setSearch}
+            /> */}
+
+
+
+
+
         <div className="div-img-container"> 
             <div className="div-product"> 
 
@@ -72,7 +92,7 @@ function Todo(){
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
-                            {/* Precio */}
+                            {/* precio */}
                         </span>
                         <span className="descripcion">
                             {/* Es una taza, con bandera de Canada */}
@@ -383,8 +403,8 @@ function Todo(){
 
 
                 </div>
-                
-               
+      
+
             </div>
         </div>
         

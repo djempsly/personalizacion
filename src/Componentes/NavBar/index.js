@@ -1,74 +1,45 @@
 import React from "react";
-import {NavLink } from "react-router-dom";
+import {Link, NavLink } from "react-router-dom";
+import { SlMenu } from "react-icons/sl";
  import './navbar.css'
 
-const NavBar = ({search, setSearch})=>{
+const NavBar = ()=>{
 
     return(
         <nav className="nav">
             <ul className="nav-izquierdo">
                 <li>
-                    <NavLink to='/'> Inicio
-
-                    </NavLink>
+                    <NavLink to='/'> Inicio </NavLink>
                 </li>
 
                 <li> <a href="#">Productos</a>
                     <ul> 
-                        <li>
-
-                            <NavLink to='/sublimable'> Productos Sublimables
-
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to= '/vinil'> Productos con Vinil
-
-                            </NavLink>
-                      
-                        </li>
+                        <li>  <NavLink to='/sublimable'> Productos Sublimables </NavLink> </li>
+                        <li> <NavLink to= '/vinil'> Productos con Vinil   </NavLink>  </li>
                     </ul>
-
                 </li>
-                       
-                    
-                    
-            
 
-                <li>
-                    <NavLink to='/servicio'> Servicios
-
-                    </NavLink>
+                <li> <a> Servicios</a>
+                    <ul>
+                        <li> <NavLink to='/migratorio'  > Asesoría Migratoria </NavLink> </li>
+                        <li> <NavLink to='/contabilidad'  > Servicios Contables </NavLink> </li>
+                        <li> <NavLink to= '/laptop'> Mantenimiento de Laptop </NavLink> </li>
+                    </ul>
                 </li>
                 <li>
-                    <NavLink to='/sobreNosotros'> Sobre Nosotros 
-
-                    </NavLink>
+                    <NavLink to='/sobreNosotros'> Sobre Nosotros </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/contactos'> Contactos
-
-                    </NavLink>
+                    <NavLink to='/contactos'> Contactos </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/otros'> Otros
-
-                    </NavLink>
+                    <NavLink to='/otros'> Otros  </NavLink>
                 </li>
               
             </ul>
 
-            {/* 👇 Aqui es el cuadro de busqueda */}
-            <input className="buscador" placeholder="Busca tu articulos aqui"
-            value={search}
-            onChange={(event)=>{
-                setSearch(event.target.value)
-            }
-            }
-            // setSearch = {setSearch}
-            />
-
-            <ul className="navbar-derecho">
+      
+            <ul className="navbar-derecho inactive">
                 <li>
                     <NavLink to='/cuenta'> Cuenta
                       
@@ -77,7 +48,7 @@ const NavBar = ({search, setSearch})=>{
                 </li>
             
                 <li>
-                    <NavLink to='pedido'>Pedido
+                    <NavLink to='pedido'> Pedido
 
                     </NavLink>
                 </li>
@@ -90,6 +61,59 @@ const NavBar = ({search, setSearch})=>{
             </ul>
 
             <div class="menu-mobile inactive">
+            <SlMenu className="menu-imagen" />
+
+            <ul className="menu-mobile">
+                <li>
+                    <NavLink to='/'> Inicio </NavLink>
+                </li>
+
+                <li> <a href="#">Productos</a>
+                    <ul> 
+                        <li>  <NavLink to='/sublimable'> Productos Sublimables </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to= '/vinil'> Productos con Vinil   </NavLink>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <NavLink to='/servicio'> Servicios </NavLink>
+                </li>
+                <li>
+                    <NavLink to='/sobreNosotros'> Sobre Nosotros </NavLink>
+                </li>
+                <li>
+                    <NavLink to='/contactos'> Contactos </NavLink>
+                </li>
+                <li>
+                    <NavLink to='/otros'> Otros  </NavLink>
+                </li>
+              
+            </ul>
+
+
+            {/* <div class="menu-mobile inactive">
+                        
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li > <a href="#">Servicio</a>
+                                    <ul>
+                                        <li><a href="">Technologia</a></li>
+                                        <li><a href="">Inmuebles</a></li>
+                                        <li><a href="">Belleza</a></li>
+                                        <li><a href="">Estilo</a></li>
+                                        <li><a href="">Salud</a></li>
+                                        <li><a href="">Deporte</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Unir</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                    
+                        </div> */}
+
       
             </div>
         </nav>

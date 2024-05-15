@@ -1,16 +1,24 @@
 import React from "react";
 
-
-function Cuenta(){
+const Migratorio = ()=>{
 
     return(
         <>
-
-
+        
         </>
     )
+
 }
 
-export {Cuenta}
+export { Migratorio}
+
+
+
+
+
+
+
+
+
 
 

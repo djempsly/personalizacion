@@ -1,16 +1,15 @@
 import React from "react";
 
-
-function Cuenta(){
-
+const Contabilidad = ()=>{
     return(
         <>
-
-
+        
         </>
     )
 }
 
-export {Cuenta}
+export { Contabilidad}
+
+
 
 

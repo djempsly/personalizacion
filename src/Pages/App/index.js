@@ -6,7 +6,7 @@ import { NavBar } from '../../Componentes/NavBar';
 import { Inicio } from '../Inicio';
 import { Sublimable } from '../Sublimable';
 import { Vinil } from '../Vinil';
-import { Servicios } from '../Servicios';
+import { Laptop } from '../Laptop';
 import { SobreNosotros } from '../SobreNosotros';
 import { Contactos } from '../Contacto';
 import { Otros } from '../Otros';
@@ -20,6 +20,8 @@ import { Logo } from '../../Componentes/HeaderLogo';
  import { Entra } from '../Sesion/IniciarSesion';
  import { Oferta } from '../../Componentes/Oferta';
  import { Modal } from '../../Componentes/Modal';
+ import { Migratorio } from '../Migratorio';
+ import { Contabilidad } from '../Contabilidad';
 
 
 const AppRoutes = () =>{
@@ -27,7 +29,7 @@ const AppRoutes = () =>{
     {path:'/', element: <Inicio />},
     {path:'/sublimable', element: <Sublimable />},
     {path:'/vinil', element: <Vinil />},
-    {path:'/servicio', element: <Servicios />},
+    {path:'/laptop', element: <Laptop />},
     {path:'/sobreNosotros', element: <SobreNosotros />},
     {path:'/contactos', element: <Contactos />},
     {path:'/otros', element: <Otros />},
@@ -36,7 +38,10 @@ const AppRoutes = () =>{
     {path:'/pedido', element: <Pedido />},
     {path: '/pedidos', element: <Pedidos />},
     {path:'/registrar', element:<Registrar />},
-    {path:'/entra', element:<Entra />}
+    {path:'/entra', element:<Entra />},
+    {path:'/migratorio', element:<Migratorio />},
+    {path: '/contabilidad', element: <Contabilidad />}
+
   ])
 
    return routes
@@ -44,7 +49,7 @@ const AppRoutes = () =>{
 
 function App() {
   const [openModal, setOpenModal] = React.useState(true)
-  const [search, setSearch] = React.useState('')
+ 
 
 
   return (
@@ -58,11 +63,7 @@ function App() {
   
   <BrowserRouter>
     <Logo />
-    <NavBar
-    search={search}
-    setSearch={setSearch}
-    
-    />
+    <NavBar />
     <Sliders />
     <AppRoutes />
     <Footer />
