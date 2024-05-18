@@ -15,12 +15,14 @@
 .nav-izquierdo{
      display: flex;
     gap: 10px;
+    position: absolute;
+    left: 250px;
     
   }
   
   .nav-izquierdo li {
   list-style: none; 
-  padding: 10px;
+  padding: 9px;
 
 }
 
@@ -75,12 +77,13 @@ background-color: orange;
 
 .nav-izquierdo li:hover > ul{
   display: block;
-  width: 20%;
+  width: 60%;
   background-color: rgb(5, 5, 153);
-
   position: absolute;
-  top: 148px;
+  top: 42px;
   margin-bottom: 6px;
+  left: 115px;
+  padding-left: 0;
 
 
 }
@@ -97,6 +100,9 @@ background-color: orange;
 
 /*Aqui empieza el menu mobile*/
 
+.div-menu-mobile{
+  display: none;
+}
 
 .menu-mobile ul {
   display: flex;
@@ -143,12 +149,11 @@ background-color: orange;
 }
 
 .menu-imagen{
+  width: 100px;
+  position: relative;
   display: none;
   cursor: pointer;
-}
-.menu-imagen{
-  width: 20px;
-  position: relative;
+  color: white;
 }
 
 
@@ -158,21 +163,11 @@ background-color: orange;
 
   }
  
-  .contenedor_usuario_registro{
-      display: block;
-  }
-  .formato_sesion_registro{
-      font-size: 15px;
-  }
 
- 
-  .info{
-      width: 50%;
-  }
-
-  .menu-mobile{
+  .div-menu-mobile{
     display: flex;
   }
+
   .nav-izquierdo{
     display: none;
   }

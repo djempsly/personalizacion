@@ -60,7 +60,8 @@ const NavBar = ()=>{
                 <span>🛒0</span>
             </ul>
 
-            <div class="menu-mobile inactive">
+            
+            <div class="div-menu-mobile">
             <SlMenu className="menu-imagen" />
 
             <ul className="menu-mobile">
