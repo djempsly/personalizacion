@@ -54,7 +54,7 @@ function Footer(){
                     </div>
                     <div>
                         <li>
-                            <a target="_blank" href="https://www.instagram.com/lhamsdj/" rel="noreferrer noopener">
+                            <a  href="https://www.instagram.com/lhamsdj/" rel="noreferrer noopener">
                             <img className="img-instagram" src={instagramlogo} alt="" /> 
                             </a>
                         </li>
