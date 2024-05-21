@@ -2,7 +2,9 @@ import React from "react";
 
 const NoEncontrado = ()=>{
     return(
-        <spa>No encontrado</spa>
+        <div className="div-span">
+            <span>No encontrado</span>
+        </div>
     )
 }
 

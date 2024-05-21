@@ -1,5 +1,65 @@
-.contable{
-    z-index: 1;
-    position: absolute;
-    top: 0;
+.container-contable{
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+   margin: auto;
+   background-color: rgb(188, 246, 246);
 }
+
+.contable{
+    width: 100%;
+   text-align: center;
+   
+}
+h1{
+    text-decoration: underline;
+    color: rgb(5, 17, 118);
+}
+.contable p{
+    font-size: 25px;
+
+}
+.ayuda{
+    color: orange;
+    font-size: 30px;
+}
+
+figure{
+    width: 100%;
+  
+}
+.img-contable{
+    width: 90%;
+    height: 450px;
+    border-radius: 50px 10px 50px 5px;
+    transition: ease-in 2ms;
+}
+
+@keyframes move {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }
+  @keyframes move2 {
+    from {
+      transform: translateY(200px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Aplica la animación al objeto */
+  .img-contable {
+    display: inline-block;
+    animation: move 2s ; /* 2 segundos de duración, 'forwards' para mantener el estado final */
+  }
+
+  .contable{
+    display: inline-block;
+    animation: move2 2s ; 
+    
+  }

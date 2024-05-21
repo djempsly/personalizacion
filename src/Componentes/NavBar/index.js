@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { SlMenu } from "react-icons/sl";
  import './navbar.css'
 
@@ -61,7 +61,7 @@ const NavBar = ()=>{
             </ul>
 
             
-            <div class="div-menu-mobile">
+            <div className="div-menu-mobile">
             <SlMenu className="menu-imagen" />
 
             <ul className="menu-mobile">
@@ -93,29 +93,6 @@ const NavBar = ()=>{
                 </li>
               
             </ul>
-
-
-            {/* <div class="menu-mobile inactive">
-                        
-                            <ul>
-                                <li><a href="#">Inicio</a></li>
-                                <li > <a href="#">Servicio</a>
-                                    <ul>
-                                        <li><a href="">Technologia</a></li>
-                                        <li><a href="">Inmuebles</a></li>
-                                        <li><a href="">Belleza</a></li>
-                                        <li><a href="">Estilo</a></li>
-                                        <li><a href="">Salud</a></li>
-                                        <li><a href="">Deporte</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Unir</a></li>
-                                <li><a href="#">Contacto</a></li>
-                            </ul>
-                    
-                        </div> */}
-
-      
             </div>
         </nav>
     )
