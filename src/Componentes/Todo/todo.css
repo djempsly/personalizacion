@@ -1,6 +1,7 @@
 .div-img-container{
     width: 100%;
     margin: 0 10px 10px 10px;
+    padding: 0;
 }
 
 .div-product{
@@ -34,8 +35,8 @@
 }
 
 .taza{
-    border: 2px solid gray;
-    box-shadow: 5px 5px 5px gray;
+    /* border: 2px solid gray;
+    box-shadow: 5px 5px 5px gray; */
     margin: 10px 0 10px 0;
     background-color: white;
 
@@ -43,8 +44,8 @@
 
 }
 .polocher{
-    border: 2px solid gray;
-    box-shadow: 5px 5px 5px gray;
+    /* border: 2px solid gray;
+    box-shadow: 5px 5px 5px gray; */
     margin: 10px 0 10px 0;
     background-color: white;
 
@@ -53,15 +54,15 @@
 
 .termo  {
     margin: 2px 0 2px 0;
-    border: 2px solid gray;
-    box-shadow: 5px 5px 5px gray;
+    /* border: 2px solid gray;
+    box-shadow: 5px 5px 5px gray; */
     background-color: white;
 
 }
 .portaretrato{
     margin: 2px 0 2px 0;
-    border: 2px solid gray;
-    box-shadow: 5px 5px 5px gray;
+    /* border: 2px solid gray;
+    box-shadow: 5px 5px 5px gray; */
     background-color: white;
 
 }

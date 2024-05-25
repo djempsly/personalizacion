@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, useRoutes} from 'react-router-dom'
-import { Sliders } from '../../Componentes/Slider';
+// import { Sliders } from '../../Componentes/Slider';
 import { NavBar } from '../../Componentes/NavBar';
 // import '../App.css';
 import { Inicio } from '../Inicio';
@@ -64,7 +64,8 @@ function App() {
   <BrowserRouter>
     <Logo />
     <NavBar />
-    <Sliders />
+    {/* <Sliders /> */}
+  
     <AppRoutes />
     <Footer />
   </BrowserRouter>

@@ -1,0 +1,10 @@
+.div-span{
+    width: 300px;
+    background: rgb(2, 96, 163);
+}
+span{
+    width: 300px;
+   color: white;
+   font-size: 100px;
+   font-family: 'Courier New', Courier, monospace;
+}
