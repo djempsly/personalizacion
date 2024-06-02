@@ -1,0 +1,7 @@
+.div-laptop{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(188, 246, 246);
+ }

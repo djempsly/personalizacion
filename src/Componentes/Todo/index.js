@@ -20,6 +20,10 @@ import  taza7 from '../../assets/imgProduct/taza7.jpg'
  import Dios from '../../assets/imgProduct/Dios.jpeg'
  import polomorado from '../../assets/imgProduct/polomorado.jpeg'
  import polomora from '../../assets/imgProduct/Polomora.jpeg'
+ import bolsa from '../../assets/imgProduct/bolsa.jpg'
+ import polocher1 from '../../assets/imgProduct/polocher1.jpg'
+ import plato from '../../assets/imgProduct/plato.jpg'
+ import termo2 from '../../assets/imgProduct/termo2.jpg'
 
 import './todo.css'
 
@@ -45,7 +49,11 @@ const ImgProduct = [
     {"img": rompeza_corazon, text:'Rompecabeza'},
     {"img": Dios, text:'Portaretrato'},
     {"img": polomora, text:'Polocher'},
-    {"img": polomorado, text:'Polocher'}
+    {"img": polomorado, text:'Polocher'},
+    {"img": polocher1, text:'Polocher'},
+    {"img": bolsa, text:'bolsa'},
+    {"img":plato, text:'plato'},
+    {"img": termo2, text:'termo'}
    
 
 ]  
@@ -117,7 +125,21 @@ function Todo(){
 
                 <div className="cuadro-productos">
                     <figure>
-                        <img src= {ImgProduct[16].img} alt="" text="Canada" className="img" loading="lazy" />   
+                        <img src= {ImgProduct[23].img} alt="" text="Canada" className="img" loading="lazy" />   
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                </div>
+
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[22].img} alt="" text="Canada" className="img" loading="lazy" />   
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
@@ -347,7 +369,23 @@ function Todo(){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
-                        </div>
+                 </div>
+
+                 <div className="cuadro-productos">
+                            <figure>
+
+                                <img src= {ImgProduct[24].img} alt="" text="Canada" className="img-termo" loading="lazy" />
+
+                            </figure>
+                            <div className="detalles-productos">
+                                <span className="precio">
+                                    {/* Precio ${precio} */}
+                                </span>
+                                <span className="descripcion">
+                                    {/* Es una taza, con bandera de Canada */}
+                                </span>
+                            </div>
+                 </div>
        
             </div>
 
@@ -387,6 +425,23 @@ function Todo(){
                     <div className="cuadro-productos">
                             <figure>
                                 <img src= {ImgProduct[20].img} alt="" text="Canada" className="img" 
+                                id="polomora"
+                                loading="lazy"/>
+
+                            </figure>
+                            <div className="detalles-productos">
+                                <span className="precio">
+                                    {/* Precio ${precio} */}
+                                </span>
+                                <span className="descripcion">
+                                    {/* Es una taza, con bandera de Canada */}
+                                </span>
+                            </div>
+                    </div>
+
+                    <div className="cuadro-productos">
+                            <figure>
+                                <img src= {ImgProduct[21].img} alt="" text="Canada" className="img" 
                                 id="polomora"
                                 loading="lazy"/>
 

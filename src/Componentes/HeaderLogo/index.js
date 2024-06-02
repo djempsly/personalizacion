@@ -26,7 +26,8 @@ const Logo = ()=>{
                 <div className="div-entrar">
                     
                     <button className="boton-entra">
-                        <Link to="/entra"> Entrar</Link>
+                        {/* <Link to="/entra"> Entrar</Link> */}
+                        <Link to="https://djempsly.github.io/Sesion-lhams/"> Entrar </Link>
                     </button>
                 </div>
                 

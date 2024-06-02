@@ -14,9 +14,11 @@
 
 .nav-izquierdo{
      display: flex;
-    gap: 10px;
+    gap: 20px;
     position: absolute;
-    left: 250px;
+    left: 400px;
+   
+  
     
   }
   
@@ -33,7 +35,8 @@
 .nav-izquierdo li a{
 color: white;
 text-decoration: none;
-font-size: 20px;
+font-size: 24px;
+
 
 }
 
@@ -158,19 +161,38 @@ background-color: orange;
 
 
 @media (max-width:640px){
-  .menu-imagen{
-      display: flex;
-
+ 
+  .nav{
+    height: 44px;
   }
  
-
-  .div-menu-mobile{
-    display: flex;
-  }
-
   .nav-izquierdo{
-    display: none;
+    left: 60px;
+    gap: 5px;
+  
   }
+    .nav-izquierdo li {
+    list-style: none; 
+    padding: 5px;
+  
+  }
+  
+  .nav-izquierdo li:hover{
+    background-color: orange;
+  }
+  
+  .nav-izquierdo li a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  
+  }
+  
+  .nav-izquierdo li a:hover{
+    color: black;
+  }
+  
+
 
 
 }

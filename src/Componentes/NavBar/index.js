@@ -12,17 +12,17 @@ const NavBar = ()=>{
                     <NavLink to='/'> Inicio </NavLink>
                 </li>
 
-                <li> <a href="#">Productos</a>
+                {/* <li> <a href="#">Productos</a>
                     <ul> 
                         <li>  <NavLink to='/sublimable'> Productos Sublimables </NavLink> </li>
                         <li> <NavLink to= '/vinil'> Productos con Vinil   </NavLink>  </li>
                     </ul>
-                </li>
+                </li> */}
 
                 <li> <a> Servicios</a>
                     <ul>
-                        <li> <NavLink to='/migratorio'  > Asesoría Migratoria </NavLink> </li>
-                        <li> <NavLink to='/contabilidad'  > Servicios Contables </NavLink> </li>
+                        <li> <NavLink to='/migratorio' > Asesoría Migratoria </NavLink> </li>
+                        <li> <NavLink to='/contabilidad' > Servicios Contables </NavLink> </li>
                         <li> <NavLink to= '/laptop'> Mantenimiento de Laptop </NavLink> </li>
                     </ul>
                 </li>
