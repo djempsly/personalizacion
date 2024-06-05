@@ -8,15 +8,16 @@ function Laptop(){
 
         <>
         <div className="div-laptop">
-            <img className="img-laptop" src={laptopservicio} alt="Imagen de servicio de laptop"  />
+            <figure> <img className="img-laptop" src={laptopservicio} alt="Imagen de servicio de laptop"  /> </figure>
         
-        </div>
+       
 
-        <h2>mantenimiento de laptop</h2>
-        <div>
+
+        <div className="mantenimiento">
+        <h2>Mantenimiento de laptop</h2>
         <p>
 
-            El mantenimiento de una laptop es crucial para asegurar su funcionamiento óptimo y prolongar su vida útil. Este proceso incluye varias tareas esenciales: <br/>
+            El mantenimiento de una laptop es crucial para asegurar su funcionamiento óptimo y prolongar su vida útil. Este proceso incluye varias tareas esenciales: <br/><br/>
 
            <strong> Limpieza Física: <br/> </strong> 
 
@@ -24,7 +25,7 @@ function Laptop(){
             Interior: Remoción de polvo y suciedad del interior del equipo, especialmente de los ventiladores y disipadores de calor, utilizando aire <br/>comprimido y brochas antiestáticas.<br/><br/>
 
 
-            <span>Revisión y Actualización del Software:<br/> </span>
+            <strong>Revisión y Actualización del Software:<br/> </strong> 
 
             Sistema Operativo: Verificación de actualizaciones y parches del sistema operativo para garantizar seguridad y rendimiento.<br/>
             Controladores (Drivers): Actualización de controladores para hardware como tarjeta gráfica, sonido, y red.<br/>
@@ -44,10 +45,13 @@ function Laptop(){
            <strong> Seguridad:<br/> </strong> 
 
             Antivirus: Instalación y actualización de software antivirus, seguido de un análisis completo del sistema para detectar y eliminar malware.<br/>
-            Copia de Seguridad: Realización de copias de seguridad de datos importantes en unidades externas o servicios en la nube.<br/><br/>
-            Revisión de Hardware:<br/>
+            Copia de Seguridad: Realización de copias de seguridad de datos importantes en unidades externas o servicios en la nube.
+            
+            <br/><br/>
 
-            Batería: Comprobación del estado de la batería y calibración si es necesario.<br/>
+
+            <strong> Revisión de Hardware:<br/> </strong>
+           <strong> Batería: </strong>  Comprobación del estado de la batería y calibración si es necesario.<br/>
             Memoria RAM: Verificación del estado de la memoria RAM y posible limpieza de los contactos.<br/>
             Disco Duro/SSD: Evaluación del estado del disco duro o SSD, incluyendo pruebas de salud y rendimiento.<br/><br/>
             Reparaciones Menores:<br/>
@@ -59,7 +63,8 @@ function Laptop(){
             Realizar estas tareas de manera regular puede prevenir problemas mayores y garantizar que la laptop funcione de manera eficiente y segura.<br/>
             </p>
 
-        </div>
+            </div>
+            </div>
      
         </>
     )

@@ -15,8 +15,6 @@ const Contabilidad = ()=>{
                 <h1> ¿Necesita ayuda con sus finanzas? </h1>
                 <h2>Ofrezco servicios contables completos para ayudarlo <br/>
                     a administrar su negocio de manera eficiente y efectiva.</h2>
-
-                    <span className="ayuda">Puedo ayudarlo con una variedad de tareas, que incluyen:</span> 
                 <p> 
                     Preparación de estados financieros: Puedo preparar estados financieros <br/> 
                     precisos y actualizados, lo que le ayudará a comprender su situación financiera y <br/>
