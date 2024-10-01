@@ -6,7 +6,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-export default function Component() {
+ export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-gray-100 dark:bg-gray-800 px-4 md:px-6 py-4 border-b">
@@ -248,3 +248,4 @@ function MenuIcon(props) {
     </svg>
   )
 }
+
