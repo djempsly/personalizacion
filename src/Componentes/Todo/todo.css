@@ -25,10 +25,6 @@
     border-radius: 10px; */
    overflow: hidden;
 }
-.detalles-productos{
-    display: flex;
-    justify-items: space-between;
-}
 
 figure{
     width: 100%;
@@ -62,13 +58,14 @@ figure{
     /* border: 2px solid gray;
     box-shadow: 5px 5px 5px gray; */
     margin: 10px 0 10px 0;
-     background-color: rgb(177, 220, 242);
+     background-color: rgb(2, 2, 79);
     width: 100%;
 }
 
 .polocher{
     margin: 10px 0 10px 0;
-    background-color: rgb(177, 220, 242);
+    background-color: rgb(2, 2, 79);
+
     width: 100%;
 
 
@@ -76,13 +73,14 @@ figure{
 
 .termo  {
     margin: 10px 0 10px 0;
-    background-color: rgb(177, 220, 242);
+    background-color: rgb(2, 2, 79);
     width: 100%;
 
 }
 .portaretrato{
     margin: 10px 0 10px 0;
-    background-color: rgb(177, 220, 242);
+    background-color: rgb(2, 2, 79);
+
     width: 100%;
 
 }
@@ -114,6 +112,23 @@ figure{
     width: 400px;
     background: rgb(5, 103, 223);
     color: white;
+  }
+
+  .detalles-productos{
+    display: flex;
+
+    justify-items: space-between;
+    margin: 10px 0 20px 0;
+}
+  .carritos{
+    background: rgb(150, 224, 150);
+    border: transparent;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-radius: 15px;
   }
   
   ::placeholder{

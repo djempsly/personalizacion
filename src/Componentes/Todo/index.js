@@ -77,12 +77,13 @@ function Todo({precio}){
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
-                            precio
+                            precio $ {precio}
                         </span>
                         <span className="descripcion">
                             Es una taza, con bandera de Canada
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
 
@@ -92,12 +93,13 @@ function Todo({precio}){
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
-                            {/* Precio ${precio} */}
+                            Precio ${precio=60}
                         </span>
                         <span className="descripcion">
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
@@ -112,6 +114,7 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
@@ -126,6 +129,7 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
                 
             </div>
@@ -143,7 +147,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>        
                         <img src= {ImgProduct[1].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />
@@ -156,7 +162,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure> 
                         <img src= {ImgProduct[12].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />
@@ -170,6 +178,7 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
@@ -185,7 +194,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>
                         <img src= {ImgProduct[4].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />                           
@@ -199,7 +210,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure> 
                         <img src= {ImgProduct[5].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true}/>                          
@@ -212,7 +225,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure> 
                         <img src= {ImgProduct[6].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />                         
@@ -226,7 +241,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>
                         <img src= {ImgProduct[7].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />                        
@@ -239,7 +256,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure> 
                         <img src= {ImgProduct[8].img} alt="" text="Canada" className="img" loading="lazy"  prefetch={true}/>                          
@@ -252,12 +271,12 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
-                <div className="cuadro-productos">
-                    <figure>
-                           
-                        <img src= {ImgProduct[9].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true}/>
 
+                <div className="cuadro-productos">
+                    <figure>    
+                        <img src= {ImgProduct[9].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true}/>
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
@@ -267,7 +286,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>
                            
@@ -282,7 +303,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>
  
@@ -297,6 +320,7 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
             </div>
               
@@ -316,7 +340,9 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>       
                         <img src= {ImgProduct[15].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
@@ -330,29 +356,27 @@ function Todo({precio}){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
-                            <figure>
-
-                                <img src= {ImgProduct[13].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
-
-                            </figure>
-                            <div className="detalles-productos">
+                        <figure>
+                            <img src= {ImgProduct[13].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
+                        </figure>
+                        <div className="detalles-productos">
                                 <span className="precio">
                                     {/* Precio ${precio} */}
                                 </span>
                                 <span className="descripcion">
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
-                            </div>
+                        </div>
+                     <button className="carritos">Add To Cart</button>
                  </div>
 
                  <div className="cuadro-productos">
                             <figure>
-
                                 <img src= {ImgProduct[24].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
-
                             </figure>
                             <div className="detalles-productos">
                                 <span className="precio">
@@ -362,6 +386,7 @@ function Todo({precio}){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                        <button className="carritos">Add To Cart</button>
                  </div>
        
             </div>
@@ -371,7 +396,6 @@ function Todo({precio}){
                     <div className="cuadro-productos">
                             <figure>
                                 <img src= {ImgProduct[2].img} alt="" text="Canada" className="img"  loading="lazy" prefetch={true} />
-
                             </figure>
                             <div className="detalles-productos">
                                 <span className="precio">
@@ -381,6 +405,7 @@ function Todo({precio}){
                                     Es una taza, con bandera de Canada
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
 
                     <div className="cuadro-productos">
@@ -398,7 +423,9 @@ function Todo({precio}){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
+
                     <div className="cuadro-productos">
                             <figure>
                                 <img src= {ImgProduct[20].img} alt="" text="Canada" className="img" 
@@ -414,6 +441,7 @@ function Todo({precio}){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
 
                     <div className="cuadro-productos">
@@ -431,12 +459,12 @@ function Todo({precio}){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
 
 
                 </div>
-      
-
+    
             </div>
         </div>
         
