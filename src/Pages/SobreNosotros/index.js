@@ -1,9 +1,12 @@
 import React from "react";
+import './sobrenosotros.css'
 
 function SobreNosotros(){
     return(
         <>
-        <div className="container-servicio">
+
+        
+        <div className="container-nosotros">
             <div className="mision">
                 <h2>Misión</h2>
                     <p>
@@ -60,6 +63,7 @@ function SobreNosotros(){
                 personalizados para incluir las últimas innovaciones y tendencias del mercado.
 
 Mejorar la Experiencia del Cliente: Implementar nuevas tecnologías y 
+git status
 procesos que faciliten la personalización y compra de nuestros productos, mejorando la satisfacción del cliente.
 Aumentar la Presencia en el Mercado: Expandir nuestra presencia en mercados nacionales e internacionales a través de estrategias de marketing efectivas y colaboraciones estratégicas.
 Fomentar la Innovación Continua: Invertir en investigación y desarrollo para seguir innovando y ofreciendo productos únicos y de alta calidad.
