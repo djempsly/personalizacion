@@ -22,6 +22,7 @@ import { Logo } from '../../Componentes/HeaderLogo';
  import { Modal } from '../../Componentes/Modal';
  import { Migratorio } from '../Migratorio';
  import { Contabilidad } from '../Contabilidad';
+ import { LaptopAccesory } from '../LaptopAccesory';
 
 
 
@@ -41,7 +42,8 @@ const AppRoutes = () =>{
     {path:'/registrar', element:<Registrar />},
     {path:'/entra', element:<Entra />},
     {path:'/migratorio', element:<Migratorio />},
-    {path: '/contabilidad', element: <Contabilidad />}
+    {path: '/contabilidad', element: <Contabilidad />},
+    {path: '/laptopaccesory', element: <LaptopAccesory />}
 
   ])
 
@@ -51,8 +53,6 @@ const AppRoutes = () =>{
 function App() {
   const [openModal, setOpenModal] = React.useState(true)
  
-
-
   return (
   <>
   {openModal && (

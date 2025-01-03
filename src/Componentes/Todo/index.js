@@ -55,7 +55,6 @@ const ImgProduct = [
     {"img":plato, text:'plato'},
     {"img": termo2, text:'termo'}
    
-
 ]  
 
 
@@ -83,7 +82,9 @@ function Todo({precio}){
                             Es una taza, con bandera de Canada
                         </span>
                     </div>
-                    <button className="carritos">Add To Cart</button>
+                    <button className="carritos">Add To Cart
+
+                    </button>
                 </div>
 
 
@@ -471,6 +472,7 @@ function Todo({precio}){
         </>
     )
 }
+
 
 export { Todo}
 

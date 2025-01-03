@@ -6,22 +6,18 @@ import { Sliders } from "../../Componentes/Slider";
 
 const Inicio = () =>{
 
-  
-
     return(
         <>
         <Sliders />
         <Layout>
             <Todo precio={25} />
-      
         </Layout>
-
 
         </>
     )
 }
 
-export { Inicio}
+export { Inicio }
 
 
 

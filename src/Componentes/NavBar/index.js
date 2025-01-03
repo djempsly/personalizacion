@@ -8,9 +8,9 @@ const NavBar = ()=>{
     return(
         <nav className="nav">
             <ul className="nav-izquierdo">
-                <li>
-                    <NavLink to='/'> Inicio </NavLink>
-                </li>
+                <li> <NavLink to='/'> Inicio </NavLink> </li>
+
+                <li>  <NavLink to='/laptopaccesory'> Laptop & Accesorios</NavLink> </li>
 
                 {/* <li> <a href="#">Productos</a>
                     <ul> 

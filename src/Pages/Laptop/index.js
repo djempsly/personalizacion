@@ -9,9 +9,6 @@ function Laptop(){
         <>
         <div className="div-laptop">
             <figure> <img className="img-laptop" src={laptopservicio} alt="Imagen de servicio de laptop"  /> </figure>
-        
-       
-
 
         <div className="mantenimiento">
         <h2>Mantenimiento de laptop</h2>
