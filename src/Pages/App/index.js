@@ -24,6 +24,7 @@ import { Logo } from '../../Componentes/HeaderLogo';
  import { Contabilidad } from '../Contabilidad';
 
 
+
 const AppRoutes = () =>{
   let routes = useRoutes([
     {path:'/', element: <Inicio />},
@@ -65,6 +66,8 @@ function App() {
     <Logo />
     <NavBar />
     {/* <Sliders /> */}
+
+  
   
     <AppRoutes />
     <Footer />

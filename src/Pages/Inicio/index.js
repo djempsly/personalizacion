@@ -12,7 +12,7 @@ const Inicio = () =>{
         <>
         <Sliders />
         <Layout>
-            <Todo  />
+            <Todo precio={25} />
       
         </Layout>
 

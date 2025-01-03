@@ -60,34 +60,11 @@ const ImgProduct = [
 
 
 
-function Todo(){
- 
-    // const [articulo, setArticulo] = React.useState(ImgProduct)
-    // const [search, setSearch] = React.useState('')
-
-    // const buscaArticulo = articulo.filter( (articul) =>{
-    //     const articuloText = articul.text.toLowerCase()
-    //     const searchText = search.toLocaleUpperCase()
-    //  return  articuloText.includes(searchText)
-      
-    // }) 
+function Todo({precio}){
 
     return(
         <>
         
-        {/* <input className="buscador inactive" placeholder="Busca tu articulos aqui"
-            value={search}
-            onChange={(event)=>{
-                setSearch(event.target.value)
-               
-            }}
-            // setSearch = {setSearch}
-            /> */}
-
-
-
-
-
         <div className="div-img-container"> 
             <div className="div-product"> 
 
@@ -100,12 +77,13 @@ function Todo(){
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
-                            {/* precio */}
+                            precio $ {precio}
                         </span>
                         <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
+                            Es una taza, con bandera de Canada
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
 
@@ -115,12 +93,13 @@ function Todo(){
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
-                            {/* Precio ${precio} */}
+                            Precio ${precio=60}
                         </span>
                         <span className="descripcion">
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
@@ -135,6 +114,7 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
@@ -149,6 +129,7 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
                 
             </div>
@@ -166,10 +147,12 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>        
-                        <img src= {ImgProduct[1].img} alt="" text="Canada" className="img" loading="lazy" />
+                        <img src= {ImgProduct[1].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
@@ -179,10 +162,12 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure> 
-                        <img src= {ImgProduct[12].img} alt="" text="Canada" className="img" loading="lazy" />
+                        <img src= {ImgProduct[12].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />
   
                     </figure>
                     <div className="detalles-productos">
@@ -193,25 +178,12 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
                     <figure>
-                        <img src= {ImgProduct[3].img} alt="" text="Canada" className="img" loading="lazy" />
-
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                        <img src= {ImgProduct[4].img} alt="" text="Canada" className="img" loading="lazy" />                           
+                        <img src= {ImgProduct[3].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />
 
                     </figure>
                     <div className="detalles-productos">
@@ -222,10 +194,28 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[4].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />                           
+
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                    <button className="carritos">Add To Cart</button>
+                </div>
+
                 <div className="cuadro-productos">
                     <figure> 
-                        <img src= {ImgProduct[5].img} alt="" text="Canada" className="img" loading="lazy"/>                          
+                        <img src= {ImgProduct[5].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true}/>                          
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
@@ -235,10 +225,12 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure> 
-                        <img src= {ImgProduct[6].img} alt="" text="Canada" className="img" loading="lazy" />                         
+                        <img src= {ImgProduct[6].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />                         
 
                     </figure>
                     <div className="detalles-productos">
@@ -249,38 +241,12 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
-                <div className="cuadro-productos">
-                    <figure>
-                        <img src= {ImgProduct[7].img} alt="" text="Canada" className="img" loading="lazy" />                        
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                        <img src= {ImgProduct[8].img} alt="" text="Canada" className="img" loading="lazy" />                          
-                    </figure>
-                    <div className="detalles-productos">
-                        <span className="precio">
-                            {/* Precio ${precio} */}
-                        </span>
-                        <span className="descripcion">
-                            {/* Es una taza, con bandera de Canada */}
-                        </span>
-                    </div>
-                </div>
-                <div className="cuadro-productos">
-                    <figure>
-                           
-                        <img src= {ImgProduct[9].img} alt="" text="Canada" className="img" loading="lazy"/>
 
+                <div className="cuadro-productos">
+                    <figure>
+                        <img src= {ImgProduct[7].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />                        
                     </figure>
                     <div className="detalles-productos">
                         <span className="precio">
@@ -290,11 +256,43 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
+                <div className="cuadro-productos">
+                    <figure> 
+                        <img src= {ImgProduct[8].img} alt="" text="Canada" className="img" loading="lazy"  prefetch={true}/>                          
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                    <button className="carritos">Add To Cart</button>
+                </div>
+
+                <div className="cuadro-productos">
+                    <figure>    
+                        <img src= {ImgProduct[9].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true}/>
+                    </figure>
+                    <div className="detalles-productos">
+                        <span className="precio">
+                            {/* Precio ${precio} */}
+                        </span>
+                        <span className="descripcion">
+                            {/* Es una taza, con bandera de Canada */}
+                        </span>
+                    </div>
+                    <button className="carritos">Add To Cart</button>
+                </div>
+
                 <div className="cuadro-productos">
                     <figure>
                            
-                        <img src= {ImgProduct[10].img} alt="" text="Canada" className="img" loading="lazy" />
+                        <img src= {ImgProduct[10].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />
      
                     </figure>
                     <div className="detalles-productos">
@@ -305,11 +303,13 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>
  
-                        <img src= {ImgProduct[11].img} alt="" text="Canada" className="img" loading="lazy" />
+                        <img src= {ImgProduct[11].img} alt="" text="Canada" className="img" loading="lazy" prefetch={true} />
      
                     </figure>
                     <div className="detalles-productos">
@@ -320,6 +320,7 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
             </div>
               
@@ -328,7 +329,7 @@ function Todo(){
             <div className="termo img-container">
                 <div className="cuadro-productos">
                     <figure>
-                        <img src= {ImgProduct[14].img} alt="" text="Canada" className="img-termo" loading="lazy" />
+                        <img src= {ImgProduct[14].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
                 
                     </figure>
                     <div className="detalles-productos">
@@ -339,10 +340,12 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
+
                 <div className="cuadro-productos">
                     <figure>       
-                        <img src= {ImgProduct[15].img} alt="" text="Canada" className="img-termo" loading="lazy" />
+                        <img src= {ImgProduct[15].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
                           
                     </figure>
                     <div className="detalles-productos">
@@ -353,29 +356,27 @@ function Todo(){
                             {/* Es una taza, con bandera de Canada */}
                         </span>
                     </div>
+                    <button className="carritos">Add To Cart</button>
                 </div>
 
                 <div className="cuadro-productos">
-                            <figure>
-
-                                <img src= {ImgProduct[13].img} alt="" text="Canada" className="img-termo" loading="lazy" />
-
-                            </figure>
-                            <div className="detalles-productos">
+                        <figure>
+                            <img src= {ImgProduct[13].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
+                        </figure>
+                        <div className="detalles-productos">
                                 <span className="precio">
                                     {/* Precio ${precio} */}
                                 </span>
                                 <span className="descripcion">
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
-                            </div>
+                        </div>
+                     <button className="carritos">Add To Cart</button>
                  </div>
 
                  <div className="cuadro-productos">
                             <figure>
-
-                                <img src= {ImgProduct[24].img} alt="" text="Canada" className="img-termo" loading="lazy" />
-
+                                <img src= {ImgProduct[24].img} alt="" text="Canada" className="img-termo" loading="lazy" prefetch={true} />
                             </figure>
                             <div className="detalles-productos">
                                 <span className="precio">
@@ -385,6 +386,7 @@ function Todo(){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                        <button className="carritos">Add To Cart</button>
                  </div>
        
             </div>
@@ -393,17 +395,17 @@ function Todo(){
                     
                     <div className="cuadro-productos">
                             <figure>
-                                <img src= {ImgProduct[2].img} alt="" text="Canada" className="img"  loading="lazy"/>
-
+                                <img src= {ImgProduct[2].img} alt="" text="Canada" className="img"  loading="lazy" prefetch={true} />
                             </figure>
                             <div className="detalles-productos">
                                 <span className="precio">
-                                    {/* Precio ${precio} */}
+                                    Precio ${precio}
                                 </span>
                                 <span className="descripcion">
-                                    {/* Es una taza, con bandera de Canada */}
+                                    Es una taza, con bandera de Canada
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
 
                     <div className="cuadro-productos">
@@ -421,7 +423,9 @@ function Todo(){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
+
                     <div className="cuadro-productos">
                             <figure>
                                 <img src= {ImgProduct[20].img} alt="" text="Canada" className="img" 
@@ -437,6 +441,7 @@ function Todo(){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
 
                     <div className="cuadro-productos">
@@ -454,12 +459,12 @@ function Todo(){
                                     {/* Es una taza, con bandera de Canada */}
                                 </span>
                             </div>
+                            <button className="carritos">Add To Cart</button>
                     </div>
 
 
                 </div>
-      
-
+    
             </div>
         </div>
         
