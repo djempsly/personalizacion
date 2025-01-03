@@ -12,6 +12,10 @@ const NavBar = ()=>{
                     <NavLink to='/'> Inicio </NavLink>
                 </li>
 
+                <li>
+                    <NavLink to='/laptop'> Laptop & Accesorios</NavLink>
+                </li>
+
                 {/* <li> <a href="#">Productos</a>
                     <ul> 
                         <li>  <NavLink to='/sublimable'> Productos Sublimables </NavLink> </li>

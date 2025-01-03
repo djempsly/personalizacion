@@ -58,13 +58,10 @@ const ImgProduct = [
 ]  
 
 
-
-function Todo({precio}){
-
+const LaptopAccesory = ({precio})=>{
     return(
         <>
-        
-        <div className="div-img-container"> 
+              <div className="div-img-container"> 
             <div className="div-product"> 
 
             <div className="portaretrato img-container">
@@ -473,34 +470,4 @@ function Todo({precio}){
     )
 }
 
-
-export { Todo}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export { LaptopAccesory }
